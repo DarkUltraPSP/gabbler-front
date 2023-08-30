@@ -20,8 +20,6 @@ function Gab({ gab }) {
     //     fetchinteractions();
     // }, []);
 
-    console.log(gab.createdAt);
-
     return (
         <div className="flex flex-row p-3 border-b overflow-auto">
             <img
