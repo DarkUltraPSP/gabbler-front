@@ -26,7 +26,7 @@ const SideMenu = () => {
                 </div>
                 <div className="flex flex-row my-2">
                     <User />
-                    <button className="text-left flex flex-row ml-2" onClick={() => goTo(`/profile/${decodeJWT.jit}`)}> Profil </button>
+                    <button className="text-left flex flex-row ml-2" onClick={() => goTo(`/profile/${decodeJWT(localStorage.getItem('token')).jti}`)}> Profil </button>
                 </div>
                 <div className="flex flex-row my-2">
                     <LogOutIcon/>

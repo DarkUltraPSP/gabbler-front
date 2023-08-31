@@ -6,6 +6,7 @@ function SignIn() {
     const [displayErrorMessage, setDisplayErrorMessage] = useState(false);
     
     const handleSubmit = async (e) => {
+        console.log(e.target.password.value);
         e.preventDefault();
         try {
             const response = await fetch(`${API_URL}/api/auth/login`, {
